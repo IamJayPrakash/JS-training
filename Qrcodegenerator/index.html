@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code generator</title>
+    <!-- bootstrap css starts  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap css ends -->
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/33c005a0aa.js" crossorigin="anonymous"></script>
+    <!-- link stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontstyle -->
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container card text-center p-5 mt-5 " style="border-radius: 20px;">
+        <div class="container card bg-info p-4 border-info">
+            <h2><i class="fa fa-qrcode"></i> Qr Code Generator</h2>
+
+            <input type="text" class="form-control p-2 mt-5 border-light" id="url_link" placeholder="Enter your Url/Link here.">
+            <button id="generate_qr" class="btn btn-secondary mx-auto  fa btn-lg p-3 m-3" style="letter-spacing:0.3em;">
+                Generate
+            </button>
+            <p class="text-white fs-6">Generated QR code will be displayed below.</p>
+            <!-- <p id="link">Link:</p> -->
+            <div class="container text-center ">
+                <img src="qr_img.png" alt=" Qr_code" height="300px" width="300px" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+    <script src="solution.js"></script>
+    
+</body>
+
+</html>

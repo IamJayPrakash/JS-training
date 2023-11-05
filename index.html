@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+
+    <!-- bootstrap css starts  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap css ends -->
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/33c005a0aa.js" crossorigin="anonymous"></script>
+    <!-- link stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontstyle -->
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav class="navbar bg-dark border-bottom border-body border-bottom border-body p-3 justify-content-center gap-5"
+        data-bs-theme="dark">
+        <a href="#"> <img src="./assests/google.svg" alt="" width="80px" class="mr-5 "
+                onclick="confirm('are you all right?')">
+        </a>
+        <h1 class=""> This is Learning path For JS Developers</h1>
+    </nav>
+
+    <!-- let var const alert -->
+    <div class="container mt-5">
+        <div class="container p-5 m-8 card">
+            <h1>content before the script</h1>
+            <button onclick="click1();" class="btn btn-secondary">1. Click me & See magic !</button>
+            <h3>content after the script</h3>
+        </div>
+        <div class="container p-2 d-flex d-grid gap-3">
+            <button onclick="click2();" class="btn btn-primary">2. Click me & See magic !</button>
+            <button onclick="click3();" class="btn btn-info">3. Click me & See magic !</button>
+            <button onclick="click4();" class="btn btn-warning">4. Click me & See magic !</button>
+            <button onclick="click5();" class="btn btn-success">5. Click me & See magic !</button>
+            <button onclick="click6();" class="btn btn-danger">6. Click me & See magic !</button>
+            <button onclick="click7();" class="btn btn-dark">7. Click me & See magic !</button>
+
+        </div>
+    </div>
+
+    <br>
+    <!-- DOM selectors -->
+
+    <div class="container card bg-dark text-white">
+        <h1 id="heading">
+            This is the heading.
+        </h1>
+        <ul>
+            <li class="list">
+                First item.
+            </li>
+            <li class="list">
+                second item.
+            </li>
+        </ul>
+        <p class="para1">This is the description of the First item.</p>
+        <p class="para2">hey you can see this line on your console also, please check.</p>
+
+    </div>
+    <br>
+    <div class="container  card text-white p-4  d-flex gap-2 justify-content-between">
+        <h2 class="text-dark text-center"> DOM Manipulation Buttons</h2>
+        <hr style="border: none; border-top: 10px dotted rgb(11, 141, 32); font-weight: bolder;">
+        <button onclick="change()" class="btn  btn-outline-secondary ">
+            <h3>click me to see DOM for Heading ID !!</h3>
+        </button>
+        <button onclick="paragraph()" class="btn  btn-outline-primary ">
+            <h3>click me to see DOM for Class list!!</h3>
+        </button>
+        <button onclick="tag()" class="btn  btn-outline-info ">
+            <h3>click me to see DOM for tagname!!</h3>
+        </button>
+
+        <div id="container1">
+            <p>Now it is changed</p>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="container card bg-info text-center  p-4 d-grid gap-3">
+        <h1 onclick="alert('this is a number generator.!')" class="bg-dark text-info p-5 fs-1 btn-lg">Number Generator
+        </h1>
+        <input type="text" id="num_value"
+            placeholder="Enter Number till you have to generate the numbers (less than 150)" class="form-control ">
+        <button onclick="generate_number();" class="btn btn-outline-success btn-lg">Generate</button>
+
+        <div class="card bg-primary text-white p-4">
+            <h4 id="generated" class="p-3">Result is:</h4>
+        </div>
+    </div>
+    <br>
+    <div class="container  bg-dark text-white p-2 ">
+        <h1 class="text-center text-secondary">Arrays , String, Object and sets</h1>
+        <hr style="border: none; border-top: 10px dotted rgb(197, 237, 219); font-weight: bolder;">
+
+        <h2 class=" text-secondary"> Array</h2>
+        <hr>
+        <button onclick="arr();" class="btn btn-primary">Array</button>
+    </div>
+    <br>
+    <div class="container bg-secondary border-light">
+        <h1 class="text-center text-warning">Temperature convertor</h1>
+        <hr style="border: none; border-top: 10px dotted rgb(197, 237, 219); font-weight: bolder;">
+        <div class="container  bg-dark card p-3 gap-3 d-flex d-grid justify-content-between text-white">
+            <hr>
+            <p class="text-center text-white fs-3">Celsius to Fahrenheit</p>
+            <hr>
+            <input type="text" name="" id="tempinC" placeholder="Enter Temperature in celsius °C" class="form-control">
+            <button onclick="CtoF();" class="btn btn-info">
+                <h2>Convert C To F</h2>
+            </button>
+            <div class="card text-dark p-3">
+                <h5>Result in fahrenheit :
+                    <h5 id="resultinF" class="text-info">-_-</h5>
+                </h5>
+            </div>
+            <hr>
+            <p class="text-center text-white fs-3">Fahrenheit to celsius</p>
+            <hr>
+            <input type="text" name="" id="tempinF" placeholder="Enter Temperature in Fahrenheit °F"
+                class="form-control">
+            <button onclick="FtoC();" class="btn btn-primary">
+                <h2>Convert F TO C</h2>
+            </button>
+            <div class="card text-dark p-3">
+                <h5>Result in Celsius:
+                    <h5 id="resultinC" class="text-info">-_-</h5>
+                </h5>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br><br>
+    <div class="container card card bg- p-4  border-light">
+        <hr>
+        <h1 class="text-info text-center">To Do list</h1>
+        <hr>
+        <div class="d-grid gap-2 justify-content d-flex m-3 ">
+            <input type="text" id="input_task" class="form-control" placeholder="Add a task">
+            <button class="btn btn-primary " onclick="AddTask();">ADD</button>
+        </div>
+        <div class="card bg-dark text-white p-3 m-3 ">
+            <ol id="Added_Task" class=" ">
+            </ol>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="container  border-danger p-5 text-center " style="background-color: #3498db; border-radius:50px">
+        <hr style="border: none; border-top: 10px dotted rgb(20, 23, 23); font-weight: bolder;">
+        <h1 class="text-center text-white"
+            style="background-color: #2c3e50; padding: 20px;border-radius:20px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  font-family:cursive">
+            " Dice Game "</h1>
+        <hr style="border: none; border-top: 10px dotted rgb(12, 13, 13); font-weight: bolder;">
+        <br>
+        <div class="container d-flex justify-content-center align-items-center p-4">
+            <div class="row ">
+                <div class="col-md-6 p-2">
+                    <div class="text-center">
+                        <h1 class="player">Player 1</h1>
+                        <div class="shadow-sm p-4 ">
+                            <img src="../assests/images/dice6.png" alt="Avatar" width="150" height="150" class="img1 ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-2">
+                    <div class="text-center">
+                        <h1 class="player">Player 2</h1>
+                        <div class="shadow-sm  p-4 ">
+                            <img src="../assests/images/dice6.png" alt="Avatar" width="150" height="150" class="img2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3 id="winner" class="fa fa-solid" style="letter-spacing: 1.2px;">
+            Guessing Winner..! ("Roll to see")
+        </h3>
+        <br>
+        <br>
+        <button class="btn btn-dark fa fa-solid btn-lg" onclick="dice_roll();">Roll</button>
+    </div>
+    <br><br>
+
+    <div class="container  card bg-secondary text-center p-4 mt-5">
+        <hr style="border: none; border-top: 10px dotted rgb(118, 190, 190); font-weight: bolder;">
+        <h1 class="text-warning">Data Fetching using REST API</h1>
+
+        <hr style="border: none; border-top: 10px dotted rgb(129, 194, 194); font-weight: bolder;">
+        <div id="data-container" class="mt-3 p-3 card bg-dark text-info fs-2">Hello this is jay. and your data will be
+            displayed here...!</div>
+        <div><br>
+            <button class="btn btn-primary fa btn-lg p-3" id="button1">Service 1 </button>
+            <button class="btn btn-info fa btn-lg p-3" id="button2">Service 2</button>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="container card bg-light text-center p-3 mt-3">
+        <table class="table table-striped table-hover">
+            <h1>
+                hello new content ....!
+            </h1>
+        </table>
+        <br>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
